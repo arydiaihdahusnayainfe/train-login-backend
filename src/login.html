@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Login Page -->
+    <section class="hidden dekstop:w-full dekstop:h-screen dekstop:flex">
+      <!-- Login -->
+      <div class="w-2/3 pl-20 py-20 pr-[200px]">
+        <img src="./assets/logo.svg" alt="Logo" />
+        <!-- tittle -->
+        <div class="my-10">
+          <h1 class="text-[40px] font-extrabold text-bold">Welcome Mang!</h1>
+          <h3 class="text-base font-medium mt-2">
+            Sign in to get unlimited access to Data & Information
+          </h3>
+        </div>
+        <form>
+          <!-- form login -->
+          <div class="flex flex-col gap-6">
+            <label for="email">
+              <span class="font-bold text-xl text-semi-dark-purple">Email</span>
+              <br />
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter your e-mail address"
+                class="mt-4 w-full rounded-full shadow-xl py-4 px-6 border-4 border-transparent focus:outline-none focus:border-semi-dark-purple focus:border-4" />
+            </label>
+
+            <label for="password">
+              <span class="font-bold text-xl text-semi-dark-purple"
+                >Password</span
+              >
+              <br />
+              <input
+                type="password"
+                id="password"
+                placeholder="Password"
+                class="mt-4 w-full rounded-full shadow-xl py-4 px-6 border-4 border-transparent focus:outline-none focus:border-semi-dark-purple focus:border-4" />
+            </label>
+          </div>
+          <!-- forgot password -->
+          <div class="mt-5 mb-10 flex justify-between">
+            <label for="remember" class="flex items-center cursor-pointer">
+              <input type="checkbox" name="remember" id="remember" 
+                class="checked:bg-purple mr-4 w-6 h-6 cursor-pointer" />
+              <span class="text-semi-dark-purple text-base font-semibold m-auto">Remember Me</span>
+            </label>
+
+            <a href="#" class="text-purple hover:text-blue-950 text-base font-semibold cursor-pointer">For Get Your Password</a>
+          </div>
+
+          <button type="submit" class="cursor-pointer my-6 w-full bg-purple hover:bg-blue-950 text-white font-bold py-4 px-6 rounded-full transition-all">Login</button>
+        </form>
+
+        <!-- sign up -->
+        <div class="relative w-full">
+          <span class="absolute w-full h-0.5 rounded-full bg-[#909090] content-['']"></span>
+          <span class="absolute -top-3 right-1/2 translate-x-1/2 z-10 bg-white px-4 rounded-full text-sm font-medium text-[#909090]">Or, Login With</span>
+        </div>
+        <!-- Login with google -->
+        <button href="#" class="mt-6 flex items-center justify-center gap-4 cursor-pointer w-full rounded-full shadow-xl py-4 px-6 border-2 border-transparent hover:bg-slate-100 transition-all">
+          <img src="./assets/logos_google-icon.svg" alt="Google" class="inline-block"/>
+          <span class="text-[#909090] text-base font-semibold">Sign Up With Google</span>
+        </button>
+
+        <!-- register -->
+        <div class="mt-10 flex justify-center text-semi-dark-purple font-semibold text-base">
+          <h5>
+            Don't have an account? <a href="./register.html" class="text-purple hover:text-semi-dark-purple">Register Here</a>
+          </h5>
+        </div>
+      </div>
+      <!-- background -->
+      <div>
+        <img src="./assets/bg-login.svg" alt="Background" class="block" />
+      </div>
+    </section>
+  </body>
+</html>
